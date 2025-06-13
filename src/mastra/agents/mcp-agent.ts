@@ -8,7 +8,7 @@ const mcp = new MCPClient({
   servers: {
     // Stdioの例
     "brave-search": {
-      "command": "/Users/user/.volta/bin/npx",
+      "command": "/usr/local/bin/npx",
       "args": [
         "-y",
         "@modelcontextprotocol/server-brave-search"
