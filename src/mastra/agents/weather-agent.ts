@@ -9,7 +9,7 @@ const mcp = new MCPClient({
   servers: {
     // Stdioの例
     "brave-search": {
-      "command": "npx",
+      "command": "/usr/local/bin/npx",
       "args": [
         "-y",
         "@modelcontextprotocol/server-brave-search"
