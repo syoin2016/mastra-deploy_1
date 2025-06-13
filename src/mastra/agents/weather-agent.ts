@@ -46,7 +46,7 @@ export const weatherAgent = new Agent({
       Always choose the most appropriate tool based on the user's request and provide helpful, accurate responses.
 `,
   model: openai('gpt-4o-mini'),
-  tools: {weatherTool, ...(await mcp.getTools())},
+  tools: await mcp.getTools(),
   memory: new Memory({
     storage: new LibSQLStore({
       url: 'file:../mastra.db', // path is relative to the .mastra/output directory
